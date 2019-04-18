@@ -136,7 +136,7 @@ class BinaryHeap{
     // Deletes the element indexed at i. 
     void deleteKeyAt(int i) 
     { 
-        decreaseKey(i,hArr[cSize-1]);
+        decreaseKey(i,hArr[getMin()]);
         // Call ExtractMin
         extractMin(i);
         
